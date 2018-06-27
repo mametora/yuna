@@ -1,1 +1,1 @@
-bot: bundle exec ruby ping.rb
+bot: bundle exec ruboty
