@@ -1,50 +1,51 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.0)
+    activesupport (6.1.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     chrono (0.4.0)
       activesupport
-    concurrent-ruby (1.0.5)
-    discordrb (3.2.1)
-      discordrb-webhooks (~> 3.2.0.1)
+    concurrent-ruby (1.1.9)
+    discordrb (3.4.0)
+      discordrb-webhooks (~> 3.3.0)
+      ffi (>= 1.9.24)
       opus-ruby
-      rbnacl (~> 3.4.0)
-      rest-client
+      rest-client (>= 2.0.0)
       websocket-client-simple (>= 0.3.0)
-    discordrb-webhooks (3.2.0.1)
-      rest-client
-    domain_name (0.5.20180417)
+    discordrb-webhooks (3.3.0)
+      rest-client (>= 2.1.0.rc1)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.5.0)
+    dotenv (2.7.6)
     event_emitter (0.2.6)
-    ffi (1.9.25)
-    http-cookie (1.0.3)
+    ffi (1.15.3)
+    http-accept (1.7.0)
+    http-cookie (1.0.4)
       domain_name (~> 0.5)
-    i18n (1.0.1)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     mem (0.1.5)
-    mime-types (3.1)
+    mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    minitest (5.11.3)
+    mime-types-data (3.2021.0704)
+    minitest (5.14.4)
     netrc (0.11.0)
     opus-ruby (1.0.1)
       ffi
-    rake (12.3.1)
-    rbnacl (3.4.0)
-      ffi
-    redis (4.0.1)
-    redis-namespace (1.6.0)
+    rake (13.0.4)
+    redis (4.3.1)
+    redis-namespace (1.8.1)
       redis (>= 3.0.4)
-    rest-client (2.0.2)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    ruboty (1.3.0)
+    ruboty (1.3.1)
       activesupport
       bundler
       dotenv
@@ -67,20 +68,20 @@ GEM
       ruboty
     ruboty-ruby (0.0.2)
       ruboty
-    slop (4.6.2)
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
+    slop (4.9.1)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
-    websocket (1.2.8)
+    unf_ext (0.0.7.7)
+    websocket (1.2.9)
     websocket-client-simple (0.3.0)
       event_emitter
       websocket
+    zeitwerk (2.4.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   rake
@@ -93,7 +94,7 @@ DEPENDENCIES
   ruboty-ruby
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 3.0.1p64
 
 BUNDLED WITH
-   1.16.1
+   2.2.15
